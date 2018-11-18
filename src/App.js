@@ -42,12 +42,14 @@ class App extends Component {
     .then(response => {
       this.setState({haveData: response.status, logo: true})
       console.log(response);
-      if(response.status === "V") {
-        window.location.href = "http://badass.ghdom.tk/vote.php?id="+response.id;
-      } else if (response.status === "R"){
-        // window.location.href = "https://snhoang.github.io/SACHACKS/";
+      if(!response.id.length) {
+        console.log(1)
+        // window.location.href = "http://badass.ghdom.tk/vote.php?id=ids95ez-1542566787"
+      } else if (response.id && response.status){
+        console.log(2)
+        // window.location.href = "http://badass.ghdom.tk/vote.php?id="+response.id;
       } else {
-        // this.setState({TryAgain: true, logo:true})
+        this.setState({TryAgain: true, logo:true})
       }
     })
     .catch( err => console.log(err))
