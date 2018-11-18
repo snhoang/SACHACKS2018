@@ -14,14 +14,16 @@ class App extends Component {
   }
 
   sendVoteToServer = (image) => {
-    let url = 'YOUR SERVER LINK';
+    let url = 'http://badass.ghdom.tk/registerScript.php';
     fetch(url, {
       method: "POST", // *GET, POST, PUT, DELETE, etc.
       headers: {
           "Content-Type": "application/json; charset=utf-8",
-          // "Content-Type": "application/x-www-form-urlencoded",
+          "Access-Control-Allow-Origin": '*',
       },
-      body: image, // body data type must match "Content-Type" header
+      body: {
+        image: image
+      }, // body data type must match "Content-Type" header
     })
     .then(res => res.json())
     .then(response => {
