@@ -59,6 +59,7 @@ class WebcamCapture extends Component {
             />
           </div>
           <a className="center db mw4 tc f6 link dim ph3 pv2 mb2 white bg-dark-gray" href="#0" onClick={this.captureRegister}>Register</a>
+          <a className="center db mw4 tc f6 link dim ph3 pv2 mb2 white bg-dark-gray" href="https://navalta3030.github.io/D35mins/">View Data</a>
           <div className="pa4-l">
             <form className="bg-dark-gray mw7 center pa4 br2-ns ba b--black-10 shadow-2">
               <fieldset className="cf bn ma0 pa0">
