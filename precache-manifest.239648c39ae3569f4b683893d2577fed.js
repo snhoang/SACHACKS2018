@@ -4,15 +4,15 @@ self.__precacheManifest = [
     "url": "/SACHACKS/static/js/runtime~main.e7d6625c.js"
   },
   {
-    "revision": "71101b5a1395b4229438",
-    "url": "/SACHACKS/static/js/main.71101b5a.chunk.js"
+    "revision": "6c71fd286bfa64ee627a",
+    "url": "/SACHACKS/static/js/main.6c71fd28.chunk.js"
   },
   {
     "revision": "0d99843cdce1b9767c17",
     "url": "/SACHACKS/static/js/1.0d99843c.chunk.js"
   },
   {
-    "revision": "71101b5a1395b4229438",
+    "revision": "6c71fd286bfa64ee627a",
     "url": "/SACHACKS/static/css/main.ddcd0bdf.chunk.css"
   },
   {
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/SACHACKS/static/css/1.2cd12b50.chunk.css"
   },
   {
-    "revision": "f1af3000e7447a595603a09076a52f90",
+    "revision": "2638c8e71f0f5e6c252bc543f08470f9",
     "url": "/SACHACKS/index.html"
   }
 ];
