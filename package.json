@@ -5,9 +5,11 @@
   "dependencies": {
     "gh-pages": "^2.0.1",
     "react": "^16.6.3",
+    "react-datepicker": "^2.0.0",
     "react-dom": "^16.6.3",
     "react-scripts": "2.1.1",
-    "react-webcam": "^1.0.4"
+    "react-webcam": "^1.0.4",
+    "tachyons": "^4.11.1"
   },
   "homepage": "https://snhoang.github.io/SACHACKS/",
   "scripts": {

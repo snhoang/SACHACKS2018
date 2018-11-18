@@ -3,9 +3,9 @@
     flex-direction: column;
     width: 16rem;
     margin: auto;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    height: 790px;
+    height: 560px;
 }
 
 .camera {
@@ -14,4 +14,12 @@
 
 .prefix {
     color: black;
+}
+
+label {
+    color: black
+}
+
+#email-address {
+    width: 560px;
 }

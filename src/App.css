@@ -1,18 +1,16 @@
-.loading-logo {
-    margin:16rem auto;
-    display: block;
-}
-
-.App{
-    /* background-color: red; */
-    height: 100vh;
-    color:white;
-    font-size: 30px;
-    text-align: center;
-    margin-top: 20 px;
-}
-
 #bday {
-    width: 200px;
+    padding: 5px;
+    width: 150px;
     border: 1px solid black;
 }
+
+.ourLogo {
+    height: 100px;
+    width: 100px;
+    position: fixed;
+        left: 21rem;
+        top: 2rem;
+    margin: 40px;
+}
+
+
