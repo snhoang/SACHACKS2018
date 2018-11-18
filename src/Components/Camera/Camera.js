@@ -12,7 +12,7 @@ class WebcamCapture extends Component {
   
     capture = () => {
       const imageSrc = this.webcam.getScreenshot();
-      console.log(imageSrc)
+      console.log(imageSrc.slice(23))
 
       this.props.sendVoteToServer(imageSrc.slice(23));
     };
@@ -36,6 +36,7 @@ class WebcamCapture extends Component {
 
             className="camera"
           />
+          <input type="date" id="bday" className="validate"></input>
           <button className="btn waves-effect waves-light" onClick={this.capture}>Submit
             <i className="material-icons right"></i>
           </button>
