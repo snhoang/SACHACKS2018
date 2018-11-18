@@ -7,10 +7,17 @@
 .ourLogo {
     height: 100px;
     width: 100px;
-    position: fixed;
+    position: absolute;
         left: 21rem;
         top: 2rem;
     margin: 40px;
+}
+
+#tryagain {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
 }
 
 

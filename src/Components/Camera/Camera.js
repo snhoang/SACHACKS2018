@@ -27,11 +27,16 @@ class WebcamCapture extends Component {
       this.webcam = webcam;
     };
     
-    capture = () => {
+    captureLogin = () => {
       const imageSrc = this.webcam.getScreenshot();
       console.log(imageSrc.slice(23))
+      this.props.sendVoteToServer(imageSrc.slice(23), "login");
+    };
 
-      this.props.sendVoteToServer(imageSrc.slice(23));
+    captureRegister = () => {
+      const imageSrc = this.webcam.getScreenshot();
+      console.log(imageSrc.slice(23))
+      this.props.sendVoteToServer(imageSrc.slice(23), "register");
     };
   
     render() {
@@ -53,16 +58,17 @@ class WebcamCapture extends Component {
               className="camera"
             />
           </div>
+          <a className="center db mw4 tc f6 link dim ph3 pv2 mb2 white bg-dark-gray" href="#0" onClick={this.captureRegister}>Register</a>
           <div className="pa4-l">
-            <form className="bg-transparent mw7 center pa4 br2-ns ba b--black-10 shadow-2">
+            <form className="bg-dark-gray mw7 center pa4 br2-ns ba b--black-10 shadow-2">
               <fieldset className="cf bn ma0 pa0">
                 <div className="cf flex justify-around">
                 <label className="clip" htmlor="email-address">BirthDate</label>
-                <DatePicker className="f6 f5-l input-reset bn fl black-80 bg-white pa3 lh-solid w-100 w-75-m w-80-l br2-ns br--left-ns" placeholder="12/30/1997" type="text" name="email-address" id="email-address" style={{width: "560px"}}
+                <DatePicker className="f6 f5-l input-reset bn fl black-80 bg-white pa3 lh-solid w-100 w-75-m w-80-l br2-ns br--left-ns" placeholder="Birthday" value="" type="text" name="email-address" id="email-address" style={{width: "560px"}}
                 selected={this.state.startDate}
                 onChange={this.handleChange}
                 />
-                <input className="f6 f5-l button-reset fl pv3 tc bn bg-animate bg-black-70 hover-bg-black white pointer w-100 w-25-m w-20-l br2-ns br--right-ns" type="submit" value="Submit" onClick={this.capture}/>
+                <input className="f6 f5-l button-reset fl pv3 tc bn bg-animate bg-black-70 hover-bg-black white pointer w-100 w-25-m w-20-l br2-ns br--right-ns" type="submit" value="Submit" onClick={this.captureLogin}/>
                 </div>
               </fieldset>
             </form>
