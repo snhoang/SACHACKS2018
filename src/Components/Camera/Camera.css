@@ -1,0 +1,13 @@
+.webcam {
+    display: flex;
+    flex-direction: column;
+    width: 16rem;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    height: 640px;
+}
+
+.camera {
+    border-radius: 5px;
+}
