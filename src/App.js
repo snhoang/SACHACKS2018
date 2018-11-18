@@ -15,24 +15,24 @@ class App extends Component {
 
   sendVoteToServer = (image) => {
     // let url = 'http://127.0.0.1:8000';
-    let url = 'http://badass.ghdom.tk/registerScript.php';
+    let url = 'http://badass.ghdom.tk/searchVoterDB.php';
     let bday = document.querySelector('#bday');
     this.setState({haveData: false})
     fetch(url, {
       method: "POST", 
-      mode: "no-cors",
       headers: {
           "Content-Type": "application/json",
           "Access-Control-Allow-Origin": '*',
       },
+      // credentials: "include",
       body: JSON.stringify({
         "image" : image,
         "bday" : bday.value
       })
   })
-  // .then( res => res.json() )
+  .then( res => res.json() )
   .then(response => {
-    this.setState({haveData: response})
+    // this.setState({haveData: response})
     console.log(response);
   })
   .catch( err => console.log(err))

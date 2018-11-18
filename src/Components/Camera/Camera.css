@@ -5,9 +5,13 @@
     margin: auto;
     justify-content: center;
     align-items: center;
-    height: 720px;
+    height: 790px;
 }
 
 .camera {
     border-radius: 5px;
+}
+
+.prefix {
+    color: black;
 }

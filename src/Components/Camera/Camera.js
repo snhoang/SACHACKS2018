@@ -3,13 +3,18 @@ import Webcam from "react-webcam";
 
 import './Camera.css'
 
-class WebcamCapture extends Component {
 
+
+class WebcamCapture extends Component {
+    // componentDidMount(){
+    //   let elems = document.querySelectorAll('.datepicker');
+    //   M.Datepicker.init(elems, null)
+    // }
 
     setRef = webcam => {
       this.webcam = webcam;
     };
-  
+    
     capture = () => {
       const imageSrc = this.webcam.getScreenshot();
       console.log(imageSrc.slice(23))
@@ -23,7 +28,6 @@ class WebcamCapture extends Component {
         height: 680,
         facingMode: "user"
       };
-  
       return (
         <div className="webcam">
           <Webcam
@@ -36,7 +40,7 @@ class WebcamCapture extends Component {
 
             className="camera"
           />
-          <input type="date" id="bday" className="validate"></input>
+          <input type="date" id="bday"></input>
           <button className="btn waves-effect waves-light" onClick={this.capture}>Submit
             <i className="material-icons right"></i>
           </button>
